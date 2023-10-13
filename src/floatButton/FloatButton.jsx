@@ -25,7 +25,7 @@ export const FloatButton = () => {
         aria-label="contact"
         className={active}
       >
-        <a href="https://wa.me/02604323788">
+        <a href="https://wa.me/2604323788">
           <WhatsAppIcon sx={{ color: "white" }} />
         </a>
       </Fab>
