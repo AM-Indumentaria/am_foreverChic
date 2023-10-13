@@ -1,0 +1,14 @@
+.floatButton {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.floatButton a {
+  display: flex;
+  align-items: center;
+}
