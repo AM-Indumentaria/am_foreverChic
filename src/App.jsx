@@ -1,11 +1,10 @@
-import './App.css'
+import { CarouselAm } from "./Components/Carousel/Carousel"
 
 function App() {
- 
 
   return (
     <>
-
+      <CarouselAm />
     </>
   )
 }
