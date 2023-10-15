@@ -6,7 +6,6 @@ import {
   IconButton,
   Menu,
   Toolbar,
-  Typography,
 } from "@mui/material";
 import logo_AM from "../../../assets/logo_AM.webp";
 import menu_logo from "../../../assets/menu_logo.svg";
@@ -18,173 +17,152 @@ export const NavbarPresentacional = ({
   handleCloseNavMenu,
 }) => {
   return (
-    <Box>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{ backgroundColor: "#fff" }}>
-          <Toolbar sx={{ justifyContent: "space-between" }}>
-            <Link to="/">
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" sx={{ backgroundColor: "#aaa" }}>
+        <Toolbar
+          disableGutters
+          sx={{ display: "flex", justifyContent: "space-around" }}
+        >
+          {/* Menu md */}
+          <Link to="/">
+            <IconButton
+              edge="start"
+              aria-label="menu"
+              sx={{
+                padding: "0.5em",
+                display: { md: "flex", xs: "none" },
+                mr: 1,
+              }}
+            >
               <img
                 src={logo_AM}
-                alt="Logo AM Forever Chic"
-                style={{ width: "1.5rem", right: "0.5em" }}
+                alt="Logo"
+                style={{ width: "3em", marginLeft: "0.5em" }}
               />
-            </Link>
+            </IconButton>
+          </Link>
+
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex", margin: "0 3rem 0 auto" },
+            }}
+          >
+            <Button
+              component={Link}
+              to="/outfits"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "black", mx: 1 }}
+            >
+              Outfits
+            </Button>
+            <Button
+              component={Link}
+              to="/talles"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "black", mx: 1 }}
+            >
+              Talles
+            </Button>
+            <Button
+              component={Link}
+              to="/sobreNosotros"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "black", mx: 1 }}
+            >
+              Sobre nosotros
+            </Button>
+            <Button
+              component={Link}
+              to="/faqs"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "black", mx: 1 }}
+            >
+              Preguntas frecuentes
+            </Button>
+            <Button
+              component={Link}
+              to="/footer"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "black", mx: 1 }}
+            >
+              Contactanos
+            </Button>
+          </Box>
+
+          {/* Menu xs */}
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="inherit"
+            sx={{ display: { xs: "flex", md: "none" } }}
+          ></IconButton>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: "block", md: "none" },
+            }}
+          >
             <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
+              component={Link}
+              to="/"
               aria-label="menu"
-              sx={{ mr: 2 }}
+              sx={{ display: { xs: "flex", md: "none" } }}
+              onClick={handleCloseNavMenu}
             >
               <img
                 src={menu_logo}
-                alt="logo menu hamburguesa"
-                style={{ width: "1.5rem", right: "0.5em" }}
+                alt="Logo"
+                style={{ width: "3em", marginLeft: "0.5em" }}
               />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              News
-            </Typography>
-            <Button color="inherit">Login</Button>
-          </Toolbar>
-        </AppBar>
-      </Box>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{ backgroundColor: "#899752" }}>
-          <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-            {/* Logo md */}
+          </Menu>
 
-            <Link to="/">
-              <IconButton
-                edge="start"
-                aria-label="menu"
-                sx={{
-                  padding: "0.5em",
-                  display: { md: "flex", xs: "none" },
-                  mr: 1,
-                }}
-              >
-                <img
-                  src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_blanco_uzmsux.png"
-                  alt="Logo"
-                  style={{ width: "5em", marginLeft: "0.5em" }}
-                />
-              </IconButton>
-            </Link>
-
-            {/* Menu md */}
-            <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Button
-                component={Link}
-                to="/"
-                onClick={handleCloseNavMenu}
-                sx={{ color: "white", mx: 1 }}
-              >
-                Productos
-              </Button>
-              <Button
-                component={Link}
-                to="/category/interior"
-                onClick={handleCloseNavMenu}
-                sx={{ color: "white", mx: 1 }}
-              >
-                Plantas de Interior
-              </Button>
-              <Button
-                component={Link}
-                to="/category/exterior"
-                onClick={handleCloseNavMenu}
-                sx={{ color: "white", mx: 1 }}
-              >
-                Plantas de Exterior
-              </Button>
-              <Button
-                component={Link}
-                to="/nosotros"
-                onClick={handleCloseNavMenu}
-                sx={{ color: "white", mx: 1 }}
-              >
-                Nosotros
-              </Button>
-            </Box>
-
-            {/* Menu xs */}
+          {/* LOGO xs */}
+          <Box
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              paddingLeft: "1em",
+            }}
+          >
             <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
+              edge="start"
+              aria-label="menu"
               sx={{ display: { xs: "flex", md: "none" } }}
-            ></IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
             >
-              <IconButton
-                component={Link}
-                to="/"
-                aria-label="menu"
-                sx={{ display: { xs: "flex", md: "none" } }}
-                onClick={handleCloseNavMenu}
-              >
-                <img
-                  src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_blanco_uzmsux.png"
-                  alt="Logo"
-                  style={{ width: "5em" }}
-                />
-              </IconButton>
-            </Menu>
-
-            {/* LOGO xs */}
-            <Box
-              sx={{
-                mr: 2,
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                paddingLeft: "1em",
-              }}
-            >
-              <IconButton
-                edge="start"
-                aria-label="menu"
-                sx={{ display: { xs: "flex", md: "none" } }}
-              >
-                <Link to="/">
-                  <img
-                    src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_blanco_uzmsux.png.png"
-                    alt="Logo"
-                    style={{ width: "5em" }}
-                  />
-                </Link>
-              </IconButton>
-            </Box>
-
-            {/*  Carrito */}
-            <Box
-              sx={{
-                display: "flex",
-                marginRight: "0.5em",
-              }}
-            ></Box>
-          </Toolbar>
-        </AppBar>
-      </Box>
+              <Link to="/">
+                <IconButton
+                  edge="start"
+                  aria-label="menu"
+                  sx={{
+                    padding: "0.5em",
+                    display: { md: "none", xs: "flex" },
+                    mr: 1,
+                  }}
+                >
+                  <img src={logo_AM} alt="Logo" style={{ width: "2em" }} />
+                </IconButton>
+              </Link>
+            </IconButton>
+          </Box>
+        </Toolbar>
+      </AppBar>
     </Box>
   );
 };
