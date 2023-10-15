@@ -1,0 +1,27 @@
+#moda {
+  padding: 72px 80px 48px 80px;
+}
+#moda img {
+  width: 512px;
+  height: 536px;
+  object-fit: fit-content;
+}
+#moda img:nth-child(3) {
+  background-color: red;
+}
+#moda h2 {
+  position: relative;
+  left: 60px;
+}
+
+#moda h3 {
+  font-size: 16px;
+}
+.carousel {
+  margin-left: 74px;
+
+  width: 1530px;
+
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
