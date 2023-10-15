@@ -89,16 +89,16 @@ export const Footer = () => {
                 <EmailOutlinedIcon
                   sx={{
                     width: {
-                      xs: 28,
-                      sm: 30,
-                      md: 30,
+                      xs: 24,
+                      sm: 26,
+                      md: 26,
                       lg: 34,
                       xl: 34,
                     },
                     height: {
-                      xs: 28,
-                      sm: 30,
-                      md: 30,
+                      xs: 24,
+                      sm: 26,
+                      md: 26,
                       lg: 34,
                       xl: 34,
                     },
