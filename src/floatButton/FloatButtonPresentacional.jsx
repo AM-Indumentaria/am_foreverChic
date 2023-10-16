@@ -11,7 +11,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
           sx={{
             backgroundColor: "#28D181",
             boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.25)",
-            ":hover": { backgroundColor: "#26aa3b " },
+            ":hover": { backgroundColor: "#28D181 " },
             position: "sticky",
             marginRight: 2,
             left: "95vw",
@@ -61,7 +61,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
           sx={{
             backgroundColor: "#E4405F",
             boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.25)",
-            ":hover": { backgroundColor: "#aa2626" },
+            ":hover": { backgroundColor: "#E4405F" },
             position: "sticky",
             marginRight: 2,
             top: "82vh",
@@ -111,7 +111,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
           sx={{
             backgroundColor: "#FFAD66",
             boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.25)",
-            ":hover": { backgroundColor: "#FFC100" },
+            ":hover": { backgroundColor: "#FFAD66" },
             position: "sticky",
             top: "90vh",
             left: "95vw",
