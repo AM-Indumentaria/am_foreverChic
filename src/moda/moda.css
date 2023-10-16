@@ -2,26 +2,64 @@
   padding: 72px 80px 48px 80px;
 }
 #moda img {
-  width: 512px;
-  height: 536px;
-  object-fit: fit-content;
+  width: 416px;
+  height: 432px;
 }
-#moda img:nth-child(3) {
-  background-color: red;
+.containers {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
 #moda h2 {
-  position: relative;
-  left: 60px;
+  position: absolute;
+  top: -3%;
 }
-
+#moda .night {
+  top: 107%;
+}
 #moda h3 {
   font-size: 16px;
 }
+
 .carousel {
-  margin-left: 74px;
-
-  width: 1530px;
-
+  position: relative;
+  margin: 0 auto;
+  width: 1287px;
   overflow-x: scroll;
   overflow-x: hidden;
+}
+.arrowFoward {
+  position: absolute;
+  top: 41%;
+  right: 2%;
+}
+.arrowBack {
+  position: absolute;
+  top: 41%;
+  left: 2%;
+}
+@media screen and (max-width: 1500px) {
+  #moda img {
+    width: 316px;
+    height: 332px;
+  }
+  .carousel {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .containers {
+    width: 980px;
+  }
+  #moda h2 {
+    position: absolute;
+    left: 6%;
+  }
+  #moda img {
+    width: 275px;
+    height: 290px;
+  }
+  .carousel {
+    width: 860px;
+  }
 }

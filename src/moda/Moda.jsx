@@ -21,11 +21,11 @@ export const Moda = () => {
     let newPosition = moveProducts;
 
     if (direction === "left") {
-      newPosition -= 150;
-      newPosition = Math.max(newPosition, -550);
+      newPosition -= 50;
+      newPosition = Math.max(newPosition, -50);
     } else if (direction === "right") {
-      newPosition += 150;
-      newPosition = Math.min(newPosition, 0);
+      newPosition += 50;
+      newPosition = Math.min(newPosition, 50);
     }
 
     console.log(newPosition);
