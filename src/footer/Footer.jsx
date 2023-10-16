@@ -142,10 +142,13 @@ export const Footer = () => {
               fill="white"
             />
           </svg>
-          <div>
+          <a
+            href="https://maps.app.goo.gl/cNqbV4aHpbyJJYid9"
+            className="text-decoration-none"
+          >
             <h3 className="fw-semibold">Adolfo Puebla Nº 446 5613 Malargüe,</h3>
             <h3 className="fw-lighter">Provincia de Mendoza, Argentina</h3>
-          </div>
+          </a>
         </div>
       </div>
       <div className="border-top border-1 d-flex flex-row justify-content-center align-items-center pt-5 amFoot gap-4 pb-4">
