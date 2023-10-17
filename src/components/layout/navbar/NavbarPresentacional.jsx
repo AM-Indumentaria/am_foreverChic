@@ -3,10 +3,17 @@ import {
   AppBar,
   Box,
   Button,
+  Container,
   IconButton,
-  Menu,
   Toolbar,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
 } from "@mui/material";
+import close_icon from "../../../assets/close_icon.svg";
+import credit_card from "../../../assets/credit_card.svg";
 import logo_AM from "../../../assets/logo_AM.webp";
 import menu_logo from "../../../assets/menu_logo.svg";
 import { Link } from "react-router-dom";
@@ -17,152 +24,325 @@ export const NavbarPresentacional = ({
   handleCloseNavMenu,
 }) => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#aaa" }}>
-        <Toolbar
-          disableGutters
-          sx={{ display: "flex", justifyContent: "space-around" }}
+    <>
+      <Box
+        sx={{
+          width: "100%",
+          height: { md: "2.3em", sm: "1.7rem", xs: "1.3rem" },
+          backgroundColor: "black",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 1,
+        }}
+      >
+        <Typography
+          variant="P"
+          sx={{
+            color: "white",
+            textAlign: "center",
+            fontSize: { md: "1rem", sm: "0.8rem", xs: "0.6rem" },
+          }}
         >
-          {/* Menu md */}
-          <Link to="/">
-            <IconButton
-              edge="start"
-              aria-label="menu"
+          ENVÍOS A TODO EL PAIS
+        </Typography>
+        <img src={credit_card} alt="logo credit card" style={{}} />
+      </Box>
+
+      <AppBar position="static" style={{ backgroundColor: "#fff" }}>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters style={{ display: "flex" }}>
+            {/* Logo AM */}
+            <Link to="/">
+              {/* celular */}
+              <IconButton
+                edge="start"
+                aria-label="menu"
+                sx={{
+                  padding: "0.5em",
+                  justifyContent: "flex-start",
+                  display: { xs: "flex", sm: "none", md: "none" },
+                }}
+              >
+                <img
+                  src={logo_AM}
+                  alt="Logo"
+                  style={{
+                    width: "2.5rem",
+                    marginLeft: "0.5em",
+                  }}
+                />
+              </IconButton>
+              {/* tablet */}
+              <IconButton
+                edge="start"
+                aria-label="menu"
+                sx={{
+                  padding: "0.5em",
+                  justifyContent: "flex-start",
+                  display: { xs: "none", sm: "flex", md: "none" },
+                }}
+              >
+                <img
+                  src={logo_AM}
+                  alt="Logo"
+                  style={{
+                    width: "3rem",
+                    marginLeft: "0.5em",
+                  }}
+                />
+              </IconButton>
+              {/* desktop */}
+              <IconButton
+                edge="start"
+                aria-label="menu"
+                sx={{
+                  padding: "0.5em",
+                  justifyContent: "flex-start",
+                  display: { xs: "none", sm: "none", md: "flex" },
+                }}
+              >
+                <img
+                  src={logo_AM}
+                  alt="Logo"
+                  style={{
+                    width: "4rem",
+                    marginLeft: "0.5em",
+                  }}
+                />
+              </IconButton>
+            </Link>
+
+            {/* MENU XS */}
+            <Box
               sx={{
-                padding: "0.5em",
-                display: { md: "flex", xs: "none" },
-                mr: 1,
+                flexGrow: 1,
+                display: { xs: "flex", sm: "none", md: "none" },
+                justifyContent: "flex-end",
               }}
             >
-              <img
-                src={logo_AM}
-                alt="Logo"
-                style={{ width: "3em", marginLeft: "0.5em" }}
-              />
-            </IconButton>
-          </Link>
-
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex", margin: "0 3rem 0 auto" },
-            }}
-          >
-            <Button
-              component={Link}
-              to="/outfits"
-              onClick={handleCloseNavMenu}
-              sx={{ color: "black", mx: 1 }}
-            >
-              Outfits
-            </Button>
-            <Button
-              component={Link}
-              to="/talles"
-              onClick={handleCloseNavMenu}
-              sx={{ color: "black", mx: 1 }}
-            >
-              Talles
-            </Button>
-            <Button
-              component={Link}
-              to="/sobreNosotros"
-              onClick={handleCloseNavMenu}
-              sx={{ color: "black", mx: 1 }}
-            >
-              Sobre nosotros
-            </Button>
-            <Button
-              component={Link}
-              to="/faqs"
-              onClick={handleCloseNavMenu}
-              sx={{ color: "black", mx: 1 }}
-            >
-              Preguntas frecuentes
-            </Button>
-            <Button
-              component={Link}
-              to="/footer"
-              onClick={handleCloseNavMenu}
-              sx={{ color: "black", mx: 1 }}
-            >
-              Contactanos
-            </Button>
-          </Box>
-
-          {/* Menu xs */}
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-            sx={{ display: { xs: "flex", md: "none" } }}
-          ></IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: "block", md: "none" },
-            }}
-          >
-            <IconButton
-              component={Link}
-              to="/"
-              aria-label="menu"
-              sx={{ display: { xs: "flex", md: "none" } }}
-              onClick={handleCloseNavMenu}
-            >
-              <img
-                src={menu_logo}
-                alt="Logo"
-                style={{ width: "3em", marginLeft: "0.5em" }}
-              />
-            </IconButton>
-          </Menu>
-
-          {/* LOGO xs */}
-          <Box
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              paddingLeft: "1em",
-            }}
-          >
-            <IconButton
-              edge="start"
-              aria-label="menu"
-              sx={{ display: { xs: "flex", md: "none" } }}
-            >
-              <Link to="/">
+              <IconButton
+                size="large"
+                aria-label="menu"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <img
+                  src={menu_logo}
+                  alt="Menu"
+                  style={{
+                    width: "2rem",
+                    margin: "auto",
+                    justifyContent: "flex-end",
+                  }}
+                />
+              </IconButton>
+              <Drawer
+                anchor="left"
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  "& .MuiPaper-root.MuiDrawer-paper": {
+                    width: "100%",
+                    height: "70%",
+                  },
+                }}
+              >
                 <IconButton
-                  edge="start"
-                  aria-label="menu"
                   sx={{
-                    padding: "0.5em",
-                    display: { md: "none", xs: "flex" },
-                    mr: 1,
+                    position: "absolute",
+                    top: "10px",
+                    right: "10px",
+                  }}
+                  onClick={handleCloseNavMenu}
+                  color="inherit"
+                  aria-label="close drawer"
+                >
+                  <img
+                    src={close_icon}
+                    alt="close icon"
+                    style={{
+                      width: "2rem",
+                      margin: "1rem",
+                      justifyContent: "flex-end",
+                    }}
+                  />
+                </IconButton>
+                <List
+                  sx={{
+                    margin: "5rem 3rem 4rem 1rem",
                   }}
                 >
-                  <img src={logo_AM} alt="Logo" style={{ width: "2em" }} />
-                </IconButton>
-              </Link>
-            </IconButton>
-          </Box>
-        </Toolbar>
+                  <ListItem
+                    button
+                    component={Link}
+                    to="/outfits"
+                    onClick={handleCloseNavMenu}
+                  >
+                    <ListItemText
+                      primary="Outfits"
+                      sx={{
+                        "& .MuiTypography-root": {
+                          fontSize: "1.2rem",
+                          fontWeight: "600",
+                          fontStyle: "italic",
+                          marginBottom: "0.5rem",
+                        },
+                      }}
+                    />
+                  </ListItem>
+                  <ListItem
+                    button
+                    component={Link}
+                    to="/talles"
+                    onClick={handleCloseNavMenu}
+                  >
+                    <ListItemText
+                      primary="Talles"
+                      sx={{
+                        "& .MuiTypography-root": {
+                          fontSize: "1.2rem",
+                          fontWeight: "600",
+                          fontStyle: "italic",
+                          marginBottom: "0.5rem",
+                        },
+                      }}
+                    />
+                  </ListItem>
+                  <ListItem
+                    button
+                    component={Link}
+                    to="/sobreNosotros"
+                    onClick={handleCloseNavMenu}
+                  >
+                    <ListItemText
+                      primary="Sobre nosotros"
+                      sx={{
+                        "& .MuiTypography-root": {
+                          fontSize: "1.2rem",
+                          fontWeight: "600",
+                          fontStyle: "italic",
+                          marginBottom: "0.5rem",
+                        },
+                      }}
+                    />
+                  </ListItem>
+                  <ListItem
+                    button
+                    component={Link}
+                    to="/faqs"
+                    onClick={handleCloseNavMenu}
+                  >
+                    <ListItemText
+                      primary="Preguntas frecuentes"
+                      sx={{
+                        "& .MuiTypography-root": {
+                          fontSize: "1.2rem",
+                          fontWeight: "600",
+                          fontStyle: "italic",
+                          marginBottom: "0.5rem",
+                        },
+                      }}
+                    />
+                  </ListItem>
+                  <ListItem
+                    button
+                    component={Link}
+                    to="/footer"
+                    onClick={handleCloseNavMenu}
+                  >
+                    <ListItemText
+                      primary="Contactanos"
+                      sx={{
+                        "& .MuiTypography-root": {
+                          fontSize: "1.2rem",
+                          fontWeight: "600",
+                          fontStyle: "italic",
+                        },
+                      }}
+                    />
+                  </ListItem>
+                </List>
+              </Drawer>
+            </Box>
+
+            {/* MENU MD */}
+            <Box
+              sx={{
+                display: { xs: "none", sm: "flex", margin: "0 0 0 auto" },
+              }}
+            >
+              <Button
+                component={Link}
+                to="/outfits"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  mx: 1,
+                  textAlign: "center",
+                  fontStyle: "italic",
+                }}
+              >
+                Outfits
+              </Button>
+              <Button
+                component={Link}
+                to="/talles"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  mx: 1,
+                  textAlign: "center",
+                  fontStyle: "italic",
+                }}
+              >
+                Talles
+              </Button>
+              <Button
+                component={Link}
+                to="/sobreNosotros"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  mx: 1,
+                  textAlign: "center",
+                  fontStyle: "italic",
+                }}
+              >
+                Sobre nosotros
+              </Button>
+              <Button
+                component={Link}
+                to="/faqs"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  mx: 1,
+                  textAlign: "center",
+                  fontStyle: "italic",
+                }}
+              >
+                Preguntas frecuentes
+              </Button>
+              <Button
+                component={Link}
+                to="/footer"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  mx: 1,
+                  textAlign: "center",
+                  fontStyle: "italic",
+                }}
+              >
+                Contactanos
+              </Button>
+            </Box>
+          </Toolbar>
+        </Container>
       </AppBar>
-    </Box>
+    </>
   );
 };
