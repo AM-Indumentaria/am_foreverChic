@@ -5,7 +5,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/quienessomos" element={<QuienesSomos />}></Route>
+        <Route path="/sobreNosotros" element={<QuienesSomos />}></Route>
       </Routes>
     </BrowserRouter>
   );
