@@ -1,4 +1,5 @@
 import { Grid, Typography } from "@mui/material";
+import silueta_talles from "../../../assets/silueta_talles.webp";
 
 export const GuiaTalles = () => {
   return (
@@ -355,6 +356,152 @@ export const GuiaTalles = () => {
             104-110 cm
           </Typography>
         </Grid>
+      </Grid>
+
+      {/* Nota */}
+      <Grid
+        item
+        xs={12}
+        md={6}
+        sx={{ padding: { xs: "1.5rem", md: "2rem", lg: "2.5rem" } }}
+      >
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.875rem", md: ".9rem", lg: "1.15rem" },
+            fontStyle: "normal",
+            fontWeight: 600,
+            lineHeight: { xs: "1.5rem", md: "1.7rem", lg: "2rem" },
+          }}
+        >
+          Nota:
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.68rem", md: ".8rem", lg: "1rem" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: { xs: "1.5rem", md: "1.7rem", lg: "2rem" },
+            marginY: { xs: ".5rem", md: ".7rem", lg: "1rem" },
+          }}
+        >
+          Cada prenda y modelo se caracterizan por ser únicos y distintos en
+          cuanto a sus medidas, las cuales varían según el diseño de su patrón y
+          su estilo. Las medidas proporcionadas en la tabla hacen referencia a
+          las dimensiones aproximadas del cuerpo promedio expresados en
+          centímetros. El sistema es orientativo y no garantiza con exactitud
+          cómo quedarán las prendas en el sujeto.
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.875rem", md: ".9rem", lg: "1rem" },
+            fontStyle: "normal",
+            fontWeight: 600,
+            lineHeight: { xs: "1.5rem", md: "1.7rem", lg: "2rem" },
+            marginY: { xs: "1rem", md: ".7rem", lg: "1rem" },
+          }}
+        >
+          Para saber cuál es tu talle, seguí los siguientes pasos:
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.75rem", md: "1rem", lg: "1.25rem" },
+            fontStyle: "normal",
+            fontWeight: 600,
+            lineHeight: { xs: "normal", md: "1.7rem", lg: "2rem" },
+            marginY: { xs: ".2rem", md: ".4rem", lg: ".6rem" },
+          }}
+        >
+          1. PECHO
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.68rem", md: ".8rem", lg: "1rem" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: { xs: "normal", md: "1.7rem", lg: "2rem" },
+            marginTop: { xs: ".2rem", md: ".4rem", lg: ".6rem" },
+          }}
+        >
+          Para saber qué talle tenés, rodeá tus pectorales con una cinta métrica
+          flexible en la parte de mayor volumen.
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.75rem", md: "1rem", lg: "1.25rem" },
+            fontStyle: "normal",
+            fontWeight: 600,
+            lineHeight: { xs: "normal", md: "1.7rem", lg: "2rem" },
+            marginTop: { xs: ".5rem", md: ".4rem", lg: ".6rem" },
+          }}
+        >
+          2. CINTURA
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.68rem", md: ".8rem", lg: "1rem" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: { xs: "normal", md: "1.7rem", lg: "2rem" },
+            marginTop: { xs: ".2rem", md: ".4rem", lg: ".6rem" },
+          }}
+        >
+          Rodeá la parte más estrecha de tu cintura con una cinta métrica.
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.75rem", md: "1rem", lg: "1.25rem" },
+            fontStyle: "normal",
+            fontWeight: 600,
+            lineHeight: { xs: "normal", md: "1.7rem", lg: "2rem" },
+            marginTop: { xs: ".5rem", md: ".4rem", lg: ".6rem" },
+          }}
+        >
+          3. CADERA
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: { xs: "0.68rem", md: ".8rem", lg: "1rem" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: { xs: "normal", md: "1.7rem", lg: "2rem" },
+            marginTop: { xs: ".2rem", md: ".4rem", lg: ".6rem" },
+          }}
+        >
+          Parate con los pies juntos y rodea tus caderas con una cinta métrica
+          en la parte de mayor volumen.
+        </Typography>
+      </Grid>
+
+      {/* Imagen de la silueta */}
+      <Grid
+        item
+        xs={12}
+        md={6}
+        sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}
+      >
+        <img
+          src={silueta_talles}
+          alt="Silueta de talles"
+          style={{ width: "16rem" }}
+        />
       </Grid>
     </>
   );
