@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<NavbarContainer />} />
-        <Route path='/home' element={<CarouselAm />} />
+        <Route path='/' element={<CarouselAm />} />
       </Routes>
     </BrowserRouter>
 
