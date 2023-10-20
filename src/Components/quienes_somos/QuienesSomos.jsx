@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import logo_AM_transparente from "../../../assets/logo_AM_transparente.webp";
+import logo_AM_transparente from "../../assets/logo_AM_transparente.webp";
 
 export const QuienesSomos = () => {
   return (

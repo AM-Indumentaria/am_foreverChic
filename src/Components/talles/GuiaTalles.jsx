@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import silueta_talles from "../../../assets/silueta_talles.webp";
+import silueta_talles from "../../assets/silueta_talles.webp";
 
 export const GuiaTalles = () => {
   return (

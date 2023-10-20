@@ -1,5 +1,5 @@
 import Carousel from "react-material-ui-carousel"
-import "../Carousel/Carousel.css"
+import "./Carousel.css"
 
 
 export const CarouselAm = ()=>{

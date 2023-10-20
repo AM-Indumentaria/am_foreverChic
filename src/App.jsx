@@ -1,21 +1,26 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { AccordionAm } from './Components/Accordion/Accordion'
-import { Moda } from "./moda/Moda";
-import { CarouselAm } from "./Components/Carousel/Carousel"
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { NavbarContainer } from './components/layout/navbar/NavbarContainer'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { GuiaTalles } from "./components/pages/talles/GuiaTalles";
-import { FloatButton } from "./floatButton/FloatButton";
-import { QuienesSomos } from "./components/pages/quienes_somos/QuienesSomos";
-import { Footer } from "./footer/Footer.jsx";
+
+import { NavbarContainer } from './components/layout/navbar/NavbarContainer';
+import { CarouselAm } from "./Components/Carousel/Carousel";
+import { Moda } from "./components/moda/Moda";
+import { GuiaTalles } from "./components/talles/GuiaTalles";
+import { QuienesSomos } from "./components/quienes_somos/QuienesSomos";
+import { AccordionAm } from "./Components/Accordion/Accordion";
+import { Footer } from "./components/layout/footer/Footer.jsx";
+import { FloatButton } from "./components/floatButton/FloatButton";
 
 
 function App() {
   return (
     <>
-      <Footer />
+      <NavbarContainer />
+      <CarouselAm />
+      <Moda />
+      <GuiaTalles />
+      <QuienesSomos />
+      <AccordionAm />
       <FloatButton />
+      <Footer />
     </>
   );
 }

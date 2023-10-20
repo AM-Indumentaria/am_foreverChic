@@ -16,7 +16,7 @@ import close_icon from "../../../assets/close_icon.svg";
 import credit_card from "../../../assets/credit_card.svg";
 import logo_AM from "../../../assets/logo_AM.webp";
 import menu_logo from "../../../assets/menu_logo.svg";
-import { Link } from "react-router-dom";
+
 
 export const NavbarPresentacional = ({
   anchorElNav,
@@ -53,7 +53,7 @@ export const NavbarPresentacional = ({
         <Container maxWidth="xl">
           <Toolbar disableGutters style={{ display: "flex" }}>
             {/* Logo AM */}
-            <Link to="/">
+            <a>
               {/* celular */}
               <IconButton
                 edge="start"
@@ -111,7 +111,7 @@ export const NavbarPresentacional = ({
                   }}
                 />
               </IconButton>
-            </Link>
+            </a>
 
             {/* MENU XS */}
             <Box
@@ -177,7 +177,7 @@ export const NavbarPresentacional = ({
                 >
                   <ListItem
                     button
-                    component={Link}
+                    
                     to="/outfits"
                     onClick={handleCloseNavMenu}
                   >
@@ -195,7 +195,7 @@ export const NavbarPresentacional = ({
                   </ListItem>
                   <ListItem
                     button
-                    component={Link}
+                    
                     to="/talles"
                     onClick={handleCloseNavMenu}
                   >
@@ -213,7 +213,7 @@ export const NavbarPresentacional = ({
                   </ListItem>
                   <ListItem
                     button
-                    component={Link}
+                    
                     to="/sobreNosotros"
                     onClick={handleCloseNavMenu}
                   >
@@ -231,7 +231,7 @@ export const NavbarPresentacional = ({
                   </ListItem>
                   <ListItem
                     button
-                    component={Link}
+                    
                     to="/faqs"
                     onClick={handleCloseNavMenu}
                   >
@@ -249,7 +249,7 @@ export const NavbarPresentacional = ({
                   </ListItem>
                   <ListItem
                     button
-                    component={Link}
+                    
                     to="/footer"
                     onClick={handleCloseNavMenu}
                   >
@@ -275,7 +275,7 @@ export const NavbarPresentacional = ({
               }}
             >
               <Button
-                component={Link}
+                
                 to="/outfits"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -288,7 +288,7 @@ export const NavbarPresentacional = ({
                 Outfits
               </Button>
               <Button
-                component={Link}
+                
                 to="/talles"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -301,7 +301,7 @@ export const NavbarPresentacional = ({
                 Talles
               </Button>
               <Button
-                component={Link}
+                
                 to="/sobreNosotros"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -314,7 +314,7 @@ export const NavbarPresentacional = ({
                 Sobre nosotros
               </Button>
               <Button
-                component={Link}
+                
                 to="/faqs"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -327,7 +327,7 @@ export const NavbarPresentacional = ({
                 Preguntas frecuentes
               </Button>
               <Button
-                component={Link}
+                
                 to="/footer"
                 onClick={handleCloseNavMenu}
                 sx={{
