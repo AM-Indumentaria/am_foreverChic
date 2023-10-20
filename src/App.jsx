@@ -1,4 +1,6 @@
 
+import { Moda } from "./moda/Moda";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { CarouselAm } from "./Components/Carousel/Carousel"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { NavbarContainer } from './components/layout/navbar/NavbarContainer'
@@ -12,10 +14,12 @@ function App() {
       <Routes>
         <Route path='/' element={<NavbarContainer />} />
         <Route path='/' element={<CarouselAm />} />
+           <Route path='/moda' element={<Moda />} />
       </Routes>
     </BrowserRouter>
 
   )
+
 }
 
-export default App
+export default App;
