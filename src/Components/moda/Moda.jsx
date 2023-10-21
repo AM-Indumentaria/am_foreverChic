@@ -19,7 +19,6 @@ export const Moda = () => {
   const translateAxisX = (direction) => {
     let newPosition = moveProducts;
     let width = window.innerWidth;
-    console.log(width);
     if (direction === "right") {
       newPosition -= 50;
       if (width >= 1450) {
