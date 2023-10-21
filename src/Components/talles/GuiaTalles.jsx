@@ -5,13 +5,13 @@ export const GuiaTalles = () => {
   return (
     <>
       <Box
+        id="talles"
         sx={{
           display: "flex",
           padding: { xs: "none", sm: "none", md: "6rem", xl: "8rem" },
         }}
       >
         <Box
-          id="talles"
           sx={{
             display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
             width: { xs: "100vw", sm: "100vw", md: "40vw", lg: "40vw" },
