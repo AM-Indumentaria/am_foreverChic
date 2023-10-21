@@ -11,10 +11,16 @@ export const GuiaTalles = () => {
         }}
       >
         <Box
+          id="talles"
           sx={{
             display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
             width: { xs: "100vw", sm: "100vw", md: "40vw", lg: "40vw" },
-            justifyContent: { xs: "none", sm: "none", md: "flex-end", lg: "flex-end" },
+            justifyContent: {
+              xs: "none",
+              sm: "none",
+              md: "flex-end",
+              lg: "flex-end",
+            },
           }}
         >
           <img

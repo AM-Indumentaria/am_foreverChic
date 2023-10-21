@@ -8,7 +8,7 @@ export const ModaPresentacional = ({
   ArrowBackIosNewIcon,
 }) => {
   return (
-    <>
+    <div id="outfits">
       <div id="moda" className="text-black">
         <div className=" mb-5 pb-4 pt-5 containers">
           <h2 className="fw-medium ms-5 ps-5">Casual</h2>
@@ -97,6 +97,6 @@ export const ModaPresentacional = ({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
