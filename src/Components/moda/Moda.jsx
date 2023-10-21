@@ -40,16 +40,17 @@ export const Moda = () => {
         newPosition = Math.max(newPosition, -82.2);
       } else if (width >= 750) {
         newPosition = Math.max(newPosition, -75.5);
+      } else if (width >= 700) {
       } else if (width >= 651) {
         newPosition = Math.max(newPosition, -97.49);
       } else if (width >= 601) {
         newPosition = Math.max(newPosition, -110.49);
       } else if (width >= 500) {
-        newPosition = Math.max(newPosition, -89.49);
+        newPosition = Math.max(newPosition, -93.49);
       } else if (width >= 400) {
-        newPosition = Math.max(newPosition, -104.49);
+        newPosition = Math.max(newPosition, -105.49);
       } else if (width >= 320) {
-        newPosition = Math.max(newPosition, -150.49);
+        newPosition = Math.max(newPosition, -106.49);
       }
     } else if (direction === "left") {
       newPosition += 50;
@@ -69,20 +70,20 @@ export const Moda = () => {
         newPosition = Math.min(newPosition, 59.2);
       } else if (width >= 950) {
         newPosition = Math.min(newPosition, 82.2);
-      } else if (width >= 750) {
+      } else if (width >= 751) {
         newPosition = Math.min(newPosition, 75.2);
       } else if (width >= 700) {
-        newPosition = Math.min(newPosition, 87.2);
+        newPosition = Math.min(newPosition, 50.2);
       } else if (width >= 665) {
         newPosition = Math.min(newPosition, 97.49);
       } else if (width >= 601) {
         newPosition = Math.min(newPosition, 110.49);
       } else if (width >= 500) {
-        newPosition = Math.min(newPosition, 89.49);
+        newPosition = Math.min(newPosition, 93.49);
       } else if (width >= 400) {
-        newPosition = Math.min(newPosition, 104.49);
+        newPosition = Math.min(newPosition, 105.49);
       } else if (width >= 320) {
-        newPosition = Math.min(newPosition, 150.49);
+        newPosition = Math.min(newPosition, 106.49);
       }
     }
 

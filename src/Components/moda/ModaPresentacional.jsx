@@ -13,7 +13,7 @@ export const ModaPresentacional = ({
         <div className=" mb-5 pb-4 pt-5 containers">
           <h2 className="fw-medium ms-5 ps-5">Casual</h2>
 
-          <div className="d-flex flex-row gap-3 justify-content-center ">
+          <div className="d-flex flex-row imgsGap justify-content-center ">
             {casual.map((prod) => {
               return (
                 <div key={prod.id}>
@@ -28,7 +28,7 @@ export const ModaPresentacional = ({
         <div className=" mb-5 pb-4 pt-5 containers">
           <h2 className="fw-medium ms-5 ps-5 ">Clasico</h2>
           <h2 className="fw-medium night ms-5 ps-5 titleNoche">Noche</h2>
-          <div className="d-flex flex-row gap-3 justify-content-center ">
+          <div className="d-flex flex-row imgsGap justify-content-center ">
             {clasico.map((prod) => {
               return (
                 <div key={prod.id}>
@@ -41,7 +41,7 @@ export const ModaPresentacional = ({
         </div>
 
         <div className="pt-5">
-          <div className="d-flex flex-row gap-3 justify-content-center carousel">
+          <div className="d-flex flex-row imgsGap justify-content-center carousel">
             {noche.map((prod) => {
               return (
                 <div

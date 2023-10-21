@@ -11,6 +11,9 @@
   margin: 0 auto;
 }
 
+#moda .imgsGap {
+  gap: 16px;
+}
 #moda h2 {
   position: absolute;
   top: -3%;
@@ -69,25 +72,28 @@
   .carousel {
     width: 590px;
   }
+  #moda h2 {
+    left: -15%;
+  }
 }
 @media screen and (max-width: 750px) {
-  .carousel {
-    width: 100%;
+  #moda {
+    padding-inline: 20px;
   }
-  #moda h2 {
-    left: -20%;
+  .carousel {
+    width: 550px;
   }
 }
 @media screen and (max-width: 600px) {
   #moda img {
-    width: 136px;
-    height: 136px;
+    width: 186px;
+    height: 186px;
   }
   .carousel {
-    width: 350px;
+    width: 450px;
   }
   #moda h2 {
-    left: -24%;
+    left: -20%;
   }
   .arrowBack,
   .arrowFoward {
@@ -96,45 +102,30 @@
 }
 @media screen and (max-width: 500px) {
   #moda img {
-    width: 106px;
-    height: 106px;
+    width: 156px;
+    height: 156px;
   }
   .carousel {
-    width: 250px;
+    width: 350px;
   }
   #moda h2 {
-    left: -30%;
+    left: -20%;
   }
 }
 @media screen and (max-width: 450px) {
   #moda h2 {
-    left: -34%;
+    left: -27%;
   }
 }
 @media screen and (max-width: 399px) {
-  .containers {
-    width: 100%;
-    margin: 0 auto;
-  }
   .carousel {
-    width: 100%;
+    width: 290px;
+  }
+  #moda img {
+    width: 126px;
+    height: 126px;
   }
   #moda h2 {
-    left: -48%;
-  }
-}
-@media screen and (max-width: 375px) {
-  #moda h2 {
-    left: -58%;
-  }
-}
-@media screen and (max-width: 350px) {
-  #moda h2 {
-    left: -69%;
-  }
-}
-@media screen and (max-width: 335px) {
-  #moda h2 {
-    left: -78%;
+    left: -30%;
   }
 }
