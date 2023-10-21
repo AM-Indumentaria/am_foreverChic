@@ -17,7 +17,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
               xs: "79vh",
               sm: "79vh",
               md: "79vh",
-              lg: "76vh",
+              lg: "78vh",
               xl: "79vh",
             },
             left: {
