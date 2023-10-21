@@ -10,21 +10,28 @@
   width: fit-content;
   margin: 0 auto;
 }
+
+#moda .imgsGap {
+  gap: 16px;
+}
 #moda h2 {
   position: absolute;
   top: -3%;
+  left: -8%;
 }
-#moda .night {
-  top: 107%;
+
+#moda .titleNoche {
+  top: 106.5%;
 }
+
 #moda h3 {
   font-size: 16px;
 }
 
 .carousel {
   position: relative;
-  margin: 0 auto;
   width: 1287px;
+  margin: 0 auto;
   overflow-x: scroll;
   overflow-x: hidden;
 }
@@ -38,28 +45,87 @@
   top: 41%;
   left: 2%;
 }
-@media screen and (max-width: 1500px) {
-  #moda img {
-    width: 316px;
-    height: 332px;
-  }
+@media screen and (max-width: 1450px) {
   .carousel {
-    width: 980px;
+    width: 100%;
   }
 }
+
 @media screen and (max-width: 1150px) {
-  .containers {
-    width: 980px;
-  }
-  #moda h2 {
-    position: absolute;
-    left: 6%;
+  .carousel {
+    width: 800px;
   }
   #moda img {
-    width: 275px;
-    height: 290px;
+    width: 316px;
+    height: 316px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .arrowFoward,
+  .arrowBack {
+    top: 35%;
+  }
+  #moda img {
+    width: 216px;
+    height: 216px;
   }
   .carousel {
-    width: 860px;
+    width: 590px;
+  }
+  #moda h2 {
+    left: -15%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #moda {
+    padding-inline: 20px;
+  }
+  .carousel {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #moda img {
+    width: 186px;
+    height: 186px;
+  }
+  .carousel {
+    width: 450px;
+  }
+  #moda h2 {
+    left: -20%;
+  }
+  .arrowBack,
+  .arrowFoward {
+    top: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #moda img {
+    width: 156px;
+    height: 156px;
+  }
+  .carousel {
+    width: 350px;
+  }
+  #moda h2 {
+    left: -20%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #moda h2 {
+    left: -27%;
+  }
+}
+@media screen and (max-width: 399px) {
+  .carousel {
+    width: 290px;
+  }
+  #moda img {
+    width: 126px;
+    height: 126px;
+  }
+  #moda h2 {
+    left: -30%;
   }
 }
