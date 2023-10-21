@@ -10,21 +10,25 @@
   width: fit-content;
   margin: 0 auto;
 }
+
 #moda h2 {
   position: absolute;
   top: -3%;
+  left: -8%;
 }
-#moda .night {
-  top: 107%;
+
+#moda .titleNoche {
+  top: 106.5%;
 }
+
 #moda h3 {
   font-size: 16px;
 }
 
 .carousel {
   position: relative;
-  margin: 0 auto;
   width: 1287px;
+  margin: 0 auto;
   overflow-x: scroll;
   overflow-x: hidden;
 }
@@ -38,28 +42,99 @@
   top: 41%;
   left: 2%;
 }
-@media screen and (max-width: 1500px) {
-  #moda img {
-    width: 316px;
-    height: 332px;
-  }
+@media screen and (max-width: 1450px) {
   .carousel {
-    width: 980px;
+    width: 100%;
   }
 }
+
 @media screen and (max-width: 1150px) {
-  .containers {
-    width: 980px;
-  }
-  #moda h2 {
-    position: absolute;
-    left: 6%;
+  .carousel {
+    width: 800px;
   }
   #moda img {
-    width: 275px;
-    height: 290px;
+    width: 316px;
+    height: 316px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .arrowFoward,
+  .arrowBack {
+    top: 35%;
+  }
+  #moda img {
+    width: 216px;
+    height: 216px;
   }
   .carousel {
-    width: 860px;
+    width: 590px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .carousel {
+    width: 100%;
+  }
+  #moda h2 {
+    left: -20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #moda img {
+    width: 136px;
+    height: 136px;
+  }
+  .carousel {
+    width: 350px;
+  }
+  #moda h2 {
+    left: -24%;
+  }
+  .arrowBack,
+  .arrowFoward {
+    top: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #moda img {
+    width: 106px;
+    height: 106px;
+  }
+  .carousel {
+    width: 250px;
+  }
+  #moda h2 {
+    left: -30%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #moda h2 {
+    left: -34%;
+  }
+}
+@media screen and (max-width: 399px) {
+  .containers {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .carousel {
+    width: 100%;
+  }
+  #moda h2 {
+    left: -48%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #moda h2 {
+    left: -58%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #moda h2 {
+    left: -69%;
+  }
+}
+@media screen and (max-width: 335px) {
+  #moda h2 {
+    left: -78%;
   }
 }

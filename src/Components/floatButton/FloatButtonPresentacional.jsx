@@ -13,9 +13,13 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.25)",
             ":hover": { backgroundColor: "#28D181 " },
             position: "fixed",
-            marginRight: 2,
-            left: "95vw",
+            left: {
+              xs: "85vw",
+              sm: "90vw",
+              xl: "95vw",
+            },
             top: "74vh",
+
             width: {
               xs: 45,
               sm: 50,
@@ -63,9 +67,12 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.25)",
             ":hover": { backgroundColor: "#E4405F" },
             position: "fixed",
-            marginRight: 2,
             top: "82vh",
-            left: "95vw",
+            left: {
+              xs: "85vw",
+              sm: "90vw",
+              xl: "95vw",
+            },
             width: {
               xs: 45,
               sm: 50,
@@ -114,8 +121,11 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             ":hover": { backgroundColor: "#FFAD66" },
             position: "fixed",
             top: "90vh",
-            left: "95vw",
-            marginRight: 2,
+            left: {
+              xs: "85vw",
+              sm: "90vw",
+              xl: "95vw",
+            },
             width: {
               xs: 45,
               sm: 50,

@@ -10,8 +10,9 @@ export const ModaPresentacional = ({
   return (
     <>
       <div id="moda" className="text-black">
-        <div className="containers mb-5 pb-4 pt-5">
-          <h2 className="fw-medium ">Casual</h2>
+        <div className=" mb-5 pb-4 pt-5 containers">
+          <h2 className="fw-medium ms-5 ps-5">Casual</h2>
+
           <div className="d-flex flex-row gap-3 justify-content-center ">
             {casual.map((prod) => {
               return (
@@ -24,10 +25,10 @@ export const ModaPresentacional = ({
           </div>
         </div>
 
-        <div className="containers mb-5 pb-4 pt-5">
-          <h2 className="fw-medium">Clasico</h2>
-          <h2 className="fw-medium night">Noche</h2>
-          <div className="d-flex flex-row gap-3 justify-content-center">
+        <div className=" mb-5 pb-4 pt-5 containers">
+          <h2 className="fw-medium ms-5 ps-5 ">Clasico</h2>
+          <h2 className="fw-medium night ms-5 ps-5 titleNoche">Noche</h2>
+          <div className="d-flex flex-row gap-3 justify-content-center ">
             {clasico.map((prod) => {
               return (
                 <div key={prod.id}>
@@ -39,7 +40,7 @@ export const ModaPresentacional = ({
           </div>
         </div>
 
-        <div className="containers pt-5">
+        <div className="pt-5">
           <div className="d-flex flex-row gap-3 justify-content-center carousel">
             {noche.map((prod) => {
               return (
@@ -50,16 +51,20 @@ export const ModaPresentacional = ({
                     transition: "0.4s",
                   }}
                 >
-                  <div>
-                    <img src={prod.img} className="mb-3"></img>
-                    <h3>{prod.title}nombre del conjunto</h3>
-                  </div>
+                  <img src={prod.img} className="mb-3 "></img>
+                  <h3>{prod.title}nombre del conjunto</h3>
                 </div>
               );
             })}
             <ArrowBackIosNewIcon
               sx={{
-                fontSize: 48,
+                fontSize: {
+                  xs: 30,
+                  sm: 40,
+                  md: 40,
+                  lg: 46,
+                  xl: 46,
+                },
                 backgroundColor: "black",
                 color: "white",
                 padding: 1.4,
@@ -67,25 +72,30 @@ export const ModaPresentacional = ({
               }}
               className="arrowBack"
               onClick={() => {
-                translateAxisX("right");
+                translateAxisX("left");
               }}
             />
             <ArrowForwardIosIcon
               sx={{
-                fontSize: 48,
+                fontSize: {
+                  xs: 30,
+                  sm: 40,
+                  md: 40,
+                  lg: 46,
+                  xl: 46,
+                },
                 backgroundColor: "black",
                 color: "white",
                 padding: 1.4,
                 cursor: "pointer",
               }}
               onClick={() => {
-                translateAxisX("left");
+                translateAxisX("right");
               }}
               className="arrowFoward"
             />
           </div>
         </div>
-        <div className="titles"></div>
       </div>
     </>
   );

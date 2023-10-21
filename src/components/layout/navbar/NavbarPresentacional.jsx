@@ -17,7 +17,6 @@ import credit_card from "../../../assets/credit_card.svg";
 import logo_AM from "../../../assets/logo_AM.webp";
 import menu_logo from "../../../assets/menu_logo.svg";
 
-
 export const NavbarPresentacional = ({
   anchorElNav,
   handleOpenNavMenu,
@@ -33,6 +32,7 @@ export const NavbarPresentacional = ({
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+
           gap: 1,
         }}
       >
@@ -49,7 +49,7 @@ export const NavbarPresentacional = ({
         <img src={credit_card} alt="logo credit card" style={{}} />
       </Box>
 
-      <AppBar position="static" style={{ backgroundColor: "#fff" }}>
+      <AppBar position="sticky" style={{ backgroundColor: "#fff" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters style={{ display: "flex" }}>
             {/* Logo AM */}
@@ -175,12 +175,7 @@ export const NavbarPresentacional = ({
                     margin: "5rem 3rem 4rem 1rem",
                   }}
                 >
-                  <ListItem
-                    button
-                    
-                    to="/outfits"
-                    onClick={handleCloseNavMenu}
-                  >
+                  <ListItem button to="/outfits" onClick={handleCloseNavMenu}>
                     <ListItemText
                       primary="Outfits"
                       sx={{
@@ -193,12 +188,7 @@ export const NavbarPresentacional = ({
                       }}
                     />
                   </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/talles"
-                    onClick={handleCloseNavMenu}
-                  >
+                  <ListItem button to="/talles" onClick={handleCloseNavMenu}>
                     <ListItemText
                       primary="Talles"
                       sx={{
@@ -213,7 +203,6 @@ export const NavbarPresentacional = ({
                   </ListItem>
                   <ListItem
                     button
-                    
                     to="/sobreNosotros"
                     onClick={handleCloseNavMenu}
                   >
@@ -229,12 +218,7 @@ export const NavbarPresentacional = ({
                       }}
                     />
                   </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/faqs"
-                    onClick={handleCloseNavMenu}
-                  >
+                  <ListItem button to="/faqs" onClick={handleCloseNavMenu}>
                     <ListItemText
                       primary="Preguntas frecuentes"
                       sx={{
@@ -247,12 +231,7 @@ export const NavbarPresentacional = ({
                       }}
                     />
                   </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/footer"
-                    onClick={handleCloseNavMenu}
-                  >
+                  <ListItem button to="/footer" onClick={handleCloseNavMenu}>
                     <ListItemText
                       primary="Contactanos"
                       sx={{
@@ -275,7 +254,6 @@ export const NavbarPresentacional = ({
               }}
             >
               <Button
-                
                 to="/outfits"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -288,7 +266,6 @@ export const NavbarPresentacional = ({
                 Outfits
               </Button>
               <Button
-                
                 to="/talles"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -301,7 +278,6 @@ export const NavbarPresentacional = ({
                 Talles
               </Button>
               <Button
-                
                 to="/sobreNosotros"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -314,7 +290,6 @@ export const NavbarPresentacional = ({
                 Sobre nosotros
               </Button>
               <Button
-                
                 to="/faqs"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -327,7 +302,6 @@ export const NavbarPresentacional = ({
                 Preguntas frecuentes
               </Button>
               <Button
-                
                 to="/footer"
                 onClick={handleCloseNavMenu}
                 sx={{

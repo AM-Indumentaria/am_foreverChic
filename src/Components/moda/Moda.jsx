@@ -16,19 +16,76 @@ export const Moda = () => {
       });
   }, []);
 
-  console.log(moveProducts);
   const translateAxisX = (direction) => {
     let newPosition = moveProducts;
-
-    if (direction === "left") {
+    let width = window.innerWidth;
+    console.log(width);
+    if (direction === "right") {
       newPosition -= 50;
-      newPosition = Math.max(newPosition, -50);
-    } else if (direction === "right") {
+      if (width >= 1450) {
+        newPosition = Math.max(newPosition, -52);
+      } else if (width >= 1400) {
+        newPosition = Math.max(newPosition, -56.5);
+      } else if (width >= 1350) {
+        newPosition = Math.max(newPosition, -63);
+      } else if (width >= 1250) {
+        newPosition = Math.max(newPosition, -75);
+      } else if (width >= 1200) {
+        newPosition = Math.max(newPosition, -80.2);
+      } else if (width >= 1150) {
+        newPosition = Math.max(newPosition, -86.2);
+      } else if (width >= 1100) {
+        newPosition = Math.max(newPosition, -59.2);
+      } else if (width >= 950) {
+        newPosition = Math.max(newPosition, -82.2);
+      } else if (width >= 750) {
+        newPosition = Math.max(newPosition, -75.5);
+      } else if (width >= 651) {
+        newPosition = Math.max(newPosition, -97.49);
+      } else if (width >= 601) {
+        newPosition = Math.max(newPosition, -110.49);
+      } else if (width >= 500) {
+        newPosition = Math.max(newPosition, -89.49);
+      } else if (width >= 400) {
+        newPosition = Math.max(newPosition, -104.49);
+      } else if (width >= 320) {
+        newPosition = Math.max(newPosition, -150.49);
+      }
+    } else if (direction === "left") {
       newPosition += 50;
-      newPosition = Math.min(newPosition, 50);
+      if (width >= 1450) {
+        newPosition = Math.min(newPosition, 52);
+      } else if (width >= 1400) {
+        newPosition = Math.min(newPosition, 56.5);
+      } else if (width >= 1350) {
+        newPosition = Math.min(newPosition, 63);
+      } else if (width >= 1250) {
+        newPosition = Math.min(newPosition, 75);
+      } else if (width >= 1200) {
+        newPosition = Math.min(newPosition, 80.2);
+      } else if (width >= 1150) {
+        newPosition = Math.min(newPosition, 86.2);
+      } else if (width >= 1100) {
+        newPosition = Math.min(newPosition, 59.2);
+      } else if (width >= 950) {
+        newPosition = Math.min(newPosition, 82.2);
+      } else if (width >= 750) {
+        newPosition = Math.min(newPosition, 75.2);
+      } else if (width >= 700) {
+        newPosition = Math.min(newPosition, 87.2);
+      } else if (width >= 665) {
+        newPosition = Math.min(newPosition, 97.49);
+      } else if (width >= 601) {
+        newPosition = Math.min(newPosition, 110.49);
+      } else if (width >= 500) {
+        newPosition = Math.min(newPosition, 89.49);
+      } else if (width >= 400) {
+        newPosition = Math.min(newPosition, 104.49);
+      } else if (width >= 320) {
+        newPosition = Math.min(newPosition, 150.49);
+      }
     }
 
-    console.log(newPosition);
     setMoveProducts(newPosition);
   };
 
