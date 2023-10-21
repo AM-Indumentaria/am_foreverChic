@@ -95,10 +95,6 @@
   #moda h2 {
     left: -20%;
   }
-  .arrowBack,
-  .arrowFoward {
-    top: 30%;
-  }
 }
 @media screen and (max-width: 500px) {
   #moda img {
@@ -127,5 +123,9 @@
   }
   #moda h2 {
     left: -30%;
+  }
+  .arrowFoward,
+  .arrowBack {
+    top: 30%;
   }
 }
