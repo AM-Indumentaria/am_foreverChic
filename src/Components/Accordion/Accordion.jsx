@@ -1,7 +1,9 @@
 import { Add, Remove } from "@mui/icons-material"
-import { Accordion, AccordionDetails, AccordionSummary, Container } from "@mui/material"
+import { Accordion, AccordionDetails, AccordionSummary, Container} from "@mui/material"
+import "../../index.css"
 import "./Accordion.css"
 import { useState } from "react"
+
 
 
 export const AccordionAm = () => {
@@ -9,17 +11,17 @@ export const AccordionAm = () => {
     const [expanded, setExpanded] = useState(false)
 
 
-    const handleChange = (panelId) => (event, isExpanded) => {
-        setExpanded({ ...expanded, [panelId]: isExpanded });
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : "");
     };
 
     return (
         <section className="faq-section">
             <Container>
                 <h2 className="faq-title">Preguntas Frecuentes</h2>
-                <Accordion expanded={expanded.panel1} onChange={handleChange('panel1')}>
+                <Accordion expanded={expanded === "panel1"} onChange={handleChange('panel1')}>
                     <AccordionSummary
-                        expandIcon={expanded.panel1 ? <Remove sx={{color: "#D0AD99"}} /> : <Add sx={{color: "#D0AD99"}}/>}
+                        expandIcon={expanded === "panel1" ? <Remove sx={{ color: "#D0AD99" }} /> : <Add sx={{ color: "#D0AD99" }} />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
@@ -29,9 +31,10 @@ export const AccordionAm = () => {
                         <p>No existe un monto mínimo de compra. Podes adquirir nuestros productos sin restricciones y según tus necesidades. Nos adaptamos a tus preferencias y te brindamos flexibilidad en tus compras. ¡Explora nuestro catálogo y elegí lo que más te guste sin preocuparte por montos mínimos!</p>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion expanded={expanded.panel2} onChange={handleChange('panel2')}>
+
+                <Accordion expanded={expanded === "panel2"} onChange={handleChange('panel2')}>
                     <AccordionSummary
-                        expandIcon={expanded.panel2 ? <Remove sx={{color: "#D0AD99"}} /> : <Add sx={{color: "#D0AD99"}} />}
+                        expandIcon={expanded === "panel2" ? <Remove sx={{ color: "#D0AD99" }} /> : <Add sx={{ color: "#D0AD99" }} />}
                         aria-controls="panel2a-content"
                         id="panel2a-header"
                     >
@@ -41,9 +44,10 @@ export const AccordionAm = () => {
                         <p>El pedido se arma el mismo día que el cliente realiza el pedido.</p>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion expanded={expanded.panel3} onChange={handleChange('panel3')}>
+
+                <Accordion expanded={expanded === "panel3"} onChange={handleChange('panel3')}>
                     <AccordionSummary
-                        expandIcon={expanded.panel3 ? <Remove sx={{color: "#D0AD99"}} /> : <Add sx={{color: "#D0AD99"}} />}
+                        expandIcon={expanded === "panel3" ? <Remove sx={{ color: "#D0AD99" }} /> : <Add sx={{ color: "#D0AD99" }} />}
                         aria-controls="panel3a-content"
                         id="panel3a-header"
                     >
@@ -53,9 +57,10 @@ export const AccordionAm = () => {
                         <p>Nuestros clientes cuentan con tres días hábiles para realizar el pago; de no hacerlo, el pedido se cancela, e invitamos a nuestros usuarios a realizar un nuevo pedido.</p>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion expanded={expanded.panel4} onChange={handleChange('panel4')}>
+
+                <Accordion expanded={expanded === "panel4"} onChange={handleChange('panel4')}>
                     <AccordionSummary
-                        expandIcon={expanded.panel4 ? <Remove sx={{color: "#D0AD99"}} /> : <Add sx={{color: "#D0AD99"}} />}
+                        expandIcon={expanded === "panel4" ? <Remove sx={{ color: "#D0AD99" }} /> : <Add sx={{ color: "#D0AD99" }} />}
                         aria-controls="panel4a-content"
                         id="panel4a-header"
                     >
@@ -65,9 +70,10 @@ export const AccordionAm = () => {
                         <p>Sí, realizamos envíos. Consultas por WhatsApp al 2604323788.</p>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion expanded={expanded.panel5} onChange={handleChange('panel5')}>
+
+                <Accordion expanded={expanded === "panel5"} onChange={handleChange('panel5')}>
                     <AccordionSummary
-                        expandIcon={expanded.panel5 ? <Remove sx={{color: "#D0AD99"}} /> : <Add sx={{color: "#D0AD99"}} />}
+                        expandIcon={expanded === "panel5" ? <Remove sx={{ color: "#D0AD99" }} /> : <Add sx={{ color: "#D0AD99" }} />}
                         aria-controls="panel5a-content"
                         id="panel5a-header"
                     >
