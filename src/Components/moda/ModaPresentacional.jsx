@@ -8,8 +8,8 @@ export const ModaPresentacional = ({
   ArrowBackIosNewIcon,
 }) => {
   return (
-    <div id="outfits">
-      <div id="moda" className="text-black">
+    <div id="outfits" className="fst-italic text-black">
+      <div id="moda">
         <div className=" mb-5 pb-4 pt-5 containers">
           <h2 className="fw-medium ms-5 ps-5">Casual</h2>
 
@@ -18,7 +18,7 @@ export const ModaPresentacional = ({
               return (
                 <div key={prod.id}>
                   <img src={prod.img} className="img-fluid mb-3"></img>
-                  <h3>{prod.title}nombre del conjunto</h3>
+                  <h3 className="">{prod.title}nombre del conjunto</h3>
                 </div>
               );
             })}
@@ -51,7 +51,7 @@ export const ModaPresentacional = ({
                     transition: "0.4s",
                   }}
                 >
-                  <img src={prod.img} className="mb-3 "></img>
+                  <img src={prod.img} className="mb-3"></img>
                   <h3>{prod.title}nombre del conjunto</h3>
                 </div>
               );

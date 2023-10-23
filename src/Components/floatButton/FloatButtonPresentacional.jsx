@@ -45,7 +45,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
           aria-label="contact"
           className={active}
         >
-          <a href="https://www.instagram.com/amindumentaria.23/">
+          <a href="https://www.instagram.com/amindumentaria.23/" target="blank">
             <InstagramIcon
               sx={{
                 color: "white",
@@ -107,7 +107,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
           aria-label="contact"
           className={active}
         >
-          <a href="https://wa.me/2604323788">
+          <a href="https://wa.me/2604323788" target="blank">
             <WhatsAppIcon
               sx={{
                 color: "white",
