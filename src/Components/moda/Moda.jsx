@@ -9,7 +9,7 @@ export const Moda = () => {
   const [moveProducts, setMoveProducts] = useState("");
 
   useEffect(() => {
-    fetch("../../src/moda.json")
+    fetch("../../../src/moda.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
