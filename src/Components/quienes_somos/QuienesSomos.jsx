@@ -4,6 +4,7 @@ import logo_AM_transparente from "../../assets/logo_AM_transparente.webp";
 export const QuienesSomos = () => {
   return (
     <Box
+      id="sobreNosotros"
       sx={{
         backgroundColor: "rgba(208, 173, 153, 0.10)",
         padding: ".4rem",

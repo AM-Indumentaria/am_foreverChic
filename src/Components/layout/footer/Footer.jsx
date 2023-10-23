@@ -12,6 +12,7 @@ export const Footer = () => {
             <a
               href="https://www.instagram.com/amindumentaria.23/"
               className=" text-decoration-none text-light"
+              target="blank"
             >
               <li className="d-flex align-items-center ">
                 <InstagramIcon
@@ -39,6 +40,7 @@ export const Footer = () => {
             <a
               href="https://www.tiktok.com/@a.m.indumentaria20"
               className="text-decoration-none text-light"
+              target="blank"
             >
               <li className="d-flex align-items-center ">
                 <svg
@@ -62,6 +64,7 @@ export const Footer = () => {
             <a
               href="https://wa.me/2604323788"
               className=" text-decoration-none text-light"
+              target="blank"
             >
               <li className="d-flex  align-items-center">
                 <WhatsAppIcon
@@ -89,6 +92,7 @@ export const Footer = () => {
             <a
               href="mailto:amindumentaria406@gmail.com"
               className=" text-decoration-none text-light"
+              target="blank"
             >
               <li className="d-flex align-items-center ">
                 <EmailOutlinedIcon
@@ -116,6 +120,7 @@ export const Footer = () => {
             <a
               href="https://www.facebook.com/Ropaypeluqueria/"
               className=" text-decoration-none text-light"
+              target="blank"
             >
               <li className="d-flex align-items-center justify-content-start ">
                 <svg
@@ -150,6 +155,7 @@ export const Footer = () => {
           <a
             href="https://maps.app.goo.gl/cNqbV4aHpbyJJYid9"
             className="text-decoration-none"
+            target="blank"
           >
             <h3 className="fw-semibold">Adolfo Puebla Nº 446 5613 Malargüe,</h3>
             <h3 className="fw-lighter">Provincia de Mendoza, Argentina</h3>

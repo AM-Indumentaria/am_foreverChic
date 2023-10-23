@@ -16,7 +16,8 @@ export const AccordionAm = () => {
     };
 
     return (
-        <section className="faq-section">
+
+        <section id="faqs" className="faq-section">
             <Container>
                 <h2 className="faq-title">Preguntas Frecuentes</h2>
                 <Accordion expanded={expanded === "panel1"} onChange={handleChange('panel1')}>
@@ -86,4 +87,5 @@ export const AccordionAm = () => {
             </Container>
         </section>
     )
-}
+
+     
