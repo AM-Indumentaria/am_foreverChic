@@ -1,0 +1,15 @@
+.floatButton {
+  display: flex;
+  flex-direction: column;
+}
+.disabled {
+  display: none !important;
+}
+.floatButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 56px;
+  border-radius: 30px;
+}

@@ -1,0 +1,131 @@
+#moda {
+  padding: 72px 80px 48px 80px;
+}
+#moda img {
+  width: 416px;
+  height: 432px;
+}
+.containers {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#moda .imgsGap {
+  gap: 16px;
+}
+#moda h2 {
+  position: absolute;
+  top: -3%;
+  left: -8%;
+}
+
+#moda .titleNoche {
+  top: 106.5%;
+}
+
+#moda h3 {
+  font-size: 16px;
+}
+
+.carousel {
+  position: relative;
+  width: 1287px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+.arrowFoward {
+  position: absolute;
+  top: 41%;
+  right: 2%;
+}
+.arrowBack {
+  position: absolute;
+  top: 41%;
+  left: 2%;
+}
+@media screen and (max-width: 1450px) {
+  .carousel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .carousel {
+    width: 800px;
+  }
+  #moda img {
+    width: 316px;
+    height: 316px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .arrowFoward,
+  .arrowBack {
+    top: 35%;
+  }
+  #moda img {
+    width: 216px;
+    height: 216px;
+  }
+  .carousel {
+    width: 590px;
+  }
+  #moda h2 {
+    left: -15%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #moda {
+    padding-inline: 20px;
+  }
+  .carousel {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #moda img {
+    width: 186px;
+    height: 186px;
+  }
+  .carousel {
+    width: 450px;
+  }
+  #moda h2 {
+    left: -20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #moda img {
+    width: 156px;
+    height: 156px;
+  }
+  .carousel {
+    width: 350px;
+  }
+  #moda h2 {
+    left: -20%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #moda h2 {
+    left: -27%;
+  }
+}
+@media screen and (max-width: 399px) {
+  .carousel {
+    width: 290px;
+  }
+  #moda img {
+    width: 126px;
+    height: 126px;
+  }
+  #moda h2 {
+    left: -30%;
+  }
+  .arrowFoward,
+  .arrowBack {
+    top: 30%;
+  }
+}
