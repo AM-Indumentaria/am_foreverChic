@@ -12,10 +12,10 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import close_icon from "../../../assets/close_icon.svg";
-import credit_card from "../../../assets/credit_card.svg";
-import logo_AM from "../../../assets/logo_AM.webp";
-import menu_logo from "../../../assets/menu_logo.svg";
+import close_icon from "../../assets/close_icon.svg";
+import credit_card from "../../assets/credit_card.svg";
+import logo_AM from "../../assets/logo_AM.webp";
+import menu_logo from "../../assets/menu_logo.svg";
 
 export const NavbarPresentacional = ({
   anchorElNav,
