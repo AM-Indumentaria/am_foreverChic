@@ -86,6 +86,6 @@ export const AccordionAm = () => {
                 </Accordion>
             </Container>
         </section>
-    )
+    )}
 
      
