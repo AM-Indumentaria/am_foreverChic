@@ -52,7 +52,7 @@ export const NavbarPresentacional = ({
         <Container maxWidth="xl">
           <Toolbar disableGutters style={{ display: "flex" }}>
             {/* Logo AM */}
-            <a href="#home">
+            <a href="#">
               {/* celular */}
               <IconButton
                 edge="start"
@@ -172,7 +172,11 @@ export const NavbarPresentacional = ({
                     margin: "5rem 3rem 4rem 1rem",
                   }}
                 >
-                  <a href="#outfits" onClick={handleCloseNavMenu}>
+                  <a
+                    href="#outfits"
+                    onClick={handleCloseNavMenu}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
                     <ListItem>
                       <ListItemText
                         primary="Outfits"
@@ -187,7 +191,11 @@ export const NavbarPresentacional = ({
                       />
                     </ListItem>
                   </a>
-                  <a href="#talles" onClick={handleCloseNavMenu}>
+                  <a
+                    href="#talles"
+                    onClick={handleCloseNavMenu}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
                     <ListItem>
                       <ListItemText
                         primary="Talles"
@@ -202,7 +210,11 @@ export const NavbarPresentacional = ({
                       />
                     </ListItem>
                   </a>
-                  <a href="#sobreNosotros" onClick={handleCloseNavMenu}>
+                  <a
+                    href="#sobreNosotros"
+                    onClick={handleCloseNavMenu}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
                     <ListItem>
                       <ListItemText
                         primary="Sobre nosotros"
@@ -217,7 +229,11 @@ export const NavbarPresentacional = ({
                       />
                     </ListItem>
                   </a>
-                  <a href="#faqs" onClick={handleCloseNavMenu}>
+                  <a
+                    href="#faqs"
+                    onClick={handleCloseNavMenu}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
                     <ListItem>
                       <ListItemText
                         primary="Preguntas frecuentes"
@@ -232,7 +248,11 @@ export const NavbarPresentacional = ({
                       />
                     </ListItem>
                   </a>
-                  <a href="#footer" onClick={handleCloseNavMenu}>
+                  <a
+                    href="#footer"
+                    onClick={handleCloseNavMenu}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
                     <ListItem>
                       <ListItemText
                         primary="Contactanos"
@@ -256,7 +276,11 @@ export const NavbarPresentacional = ({
                 display: { xs: "none", sm: "flex", margin: "0 0 0 auto" },
               }}
             >
-              <a href="#outfits" onClick={handleCloseNavMenu}>
+              <a
+                href="#outfits"
+                onClick={handleCloseNavMenu}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <Button
                   sx={{
                     color: "black",
@@ -268,7 +292,11 @@ export const NavbarPresentacional = ({
                   Outfits
                 </Button>
               </a>
-              <a href="#talles" onClick={handleCloseNavMenu}>
+              <a
+                href="#talles"
+                onClick={handleCloseNavMenu}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <Button
                   sx={{
                     color: "black",
@@ -280,7 +308,11 @@ export const NavbarPresentacional = ({
                   Talles
                 </Button>
               </a>
-              <a href="#sobreNosotros" onClick={handleCloseNavMenu}>
+              <a
+                href="#sobreNosotros"
+                onClick={handleCloseNavMenu}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <Button
                   sx={{
                     color: "black",
@@ -292,7 +324,11 @@ export const NavbarPresentacional = ({
                   Sobre nosotros
                 </Button>
               </a>
-              <a href="#faqs" onClick={handleCloseNavMenu}>
+              <a
+                href="#faqs"
+                onClick={handleCloseNavMenu}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <Button
                   sx={{
                     color: "black",
@@ -304,7 +340,11 @@ export const NavbarPresentacional = ({
                   Preguntas frecuentes
                 </Button>
               </a>
-              <a href="#footer" onClick={handleCloseNavMenu}>
+              <a
+                href="#footer"
+                onClick={handleCloseNavMenu}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <Button
                   sx={{
                     color: "black",

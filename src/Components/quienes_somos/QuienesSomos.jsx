@@ -8,11 +8,12 @@ export const QuienesSomos = () => {
       sx={{
         backgroundColor: "rgba(208, 173, 153, 0.10)",
         padding: ".4rem",
+        marginTop: "5rem"
       }}
     >
       {/* Modo MOBILE */}
       <Box
-        item
+
         sx={{
           display: { xs: "flex", sm: "none", md: "none", lg: "none" },
           flexDirection: { xs: "column" },
@@ -102,7 +103,7 @@ export const QuienesSomos = () => {
       >
         <Box
           className="caja1"
-          item
+
           sx={{
             display: { xs: "none", sm: "flex", md: "flex", lg: "flex" },
             width: "60vw",
