@@ -5,6 +5,7 @@ export const GuiaTalles = () => {
   return (
     <>
       <Box
+        id="talles"
         sx={{
           display: "flex",
           padding: { xs: "none", sm: "none", md: "6rem", xl: "8rem" },
@@ -14,7 +15,12 @@ export const GuiaTalles = () => {
           sx={{
             display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
             width: { xs: "100vw", sm: "100vw", md: "40vw", lg: "40vw" },
-            justifyContent: { xs: "none", sm: "none", md: "flex-end", lg: "flex-end" },
+            justifyContent: {
+              xs: "none",
+              sm: "none",
+              md: "flex-end",
+              lg: "flex-end",
+            },
           }}
         >
           <img

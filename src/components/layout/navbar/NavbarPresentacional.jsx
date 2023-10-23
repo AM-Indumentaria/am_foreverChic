@@ -17,7 +17,6 @@ import credit_card from "../../../assets/credit_card.svg";
 import logo_AM from "../../../assets/logo_AM.webp";
 import menu_logo from "../../../assets/menu_logo.svg";
 
-
 export const NavbarPresentacional = ({
   anchorElNav,
   handleOpenNavMenu,
@@ -44,16 +43,16 @@ export const NavbarPresentacional = ({
             fontSize: { md: "1rem", sm: "0.8rem", xs: "0.6rem" },
           }}
         >
-          ENVÍOS A TODO EL PAIS
+          ENVÍOS A TODO EL PAÍS
         </Typography>
         <img src={credit_card} alt="logo credit card" style={{}} />
       </Box>
 
-      <AppBar position="static" style={{ backgroundColor: "#fff" }}>
+      <AppBar position="sticky" style={{ backgroundColor: "#fff" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters style={{ display: "flex" }}>
             {/* Logo AM */}
-            <a>
+            <a href="#home">
               {/* celular */}
               <IconButton
                 edge="start"
@@ -124,8 +123,6 @@ export const NavbarPresentacional = ({
               <IconButton
                 size="large"
                 aria-label="menu"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 color="inherit"
               >
@@ -175,95 +172,80 @@ export const NavbarPresentacional = ({
                     margin: "5rem 3rem 4rem 1rem",
                   }}
                 >
-                  <ListItem
-                    button
-                    
-                    to="/outfits"
-                    onClick={handleCloseNavMenu}
-                  >
-                    <ListItemText
-                      primary="Outfits"
-                      sx={{
-                        "& .MuiTypography-root": {
-                          fontSize: "1.2rem",
-                          fontWeight: "600",
-                          fontStyle: "italic",
-                          marginBottom: "0.5rem",
-                        },
-                      }}
-                    />
-                  </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/talles"
-                    onClick={handleCloseNavMenu}
-                  >
-                    <ListItemText
-                      primary="Talles"
-                      sx={{
-                        "& .MuiTypography-root": {
-                          fontSize: "1.2rem",
-                          fontWeight: "600",
-                          fontStyle: "italic",
-                          marginBottom: "0.5rem",
-                        },
-                      }}
-                    />
-                  </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/sobreNosotros"
-                    onClick={handleCloseNavMenu}
-                  >
-                    <ListItemText
-                      primary="Sobre nosotros"
-                      sx={{
-                        "& .MuiTypography-root": {
-                          fontSize: "1.2rem",
-                          fontWeight: "600",
-                          fontStyle: "italic",
-                          marginBottom: "0.5rem",
-                        },
-                      }}
-                    />
-                  </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/faqs"
-                    onClick={handleCloseNavMenu}
-                  >
-                    <ListItemText
-                      primary="Preguntas frecuentes"
-                      sx={{
-                        "& .MuiTypography-root": {
-                          fontSize: "1.2rem",
-                          fontWeight: "600",
-                          fontStyle: "italic",
-                          marginBottom: "0.5rem",
-                        },
-                      }}
-                    />
-                  </ListItem>
-                  <ListItem
-                    button
-                    
-                    to="/footer"
-                    onClick={handleCloseNavMenu}
-                  >
-                    <ListItemText
-                      primary="Contactanos"
-                      sx={{
-                        "& .MuiTypography-root": {
-                          fontSize: "1.2rem",
-                          fontWeight: "600",
-                          fontStyle: "italic",
-                        },
-                      }}
-                    />
-                  </ListItem>
+                  <a href="#outfits" onClick={handleCloseNavMenu}>
+                    <ListItem>
+                      <ListItemText
+                        primary="Outfits"
+                        sx={{
+                          "& .MuiTypography-root": {
+                            fontSize: "1.2rem",
+                            fontWeight: "600",
+                            fontStyle: "italic",
+                            marginBottom: "0.5rem",
+                          },
+                        }}
+                      />
+                    </ListItem>
+                  </a>
+                  <a href="#talles" onClick={handleCloseNavMenu}>
+                    <ListItem>
+                      <ListItemText
+                        primary="Talles"
+                        sx={{
+                          "& .MuiTypography-root": {
+                            fontSize: "1.2rem",
+                            fontWeight: "600",
+                            fontStyle: "italic",
+                            marginBottom: "0.5rem",
+                          },
+                        }}
+                      />
+                    </ListItem>
+                  </a>
+                  <a href="#sobreNosotros" onClick={handleCloseNavMenu}>
+                    <ListItem>
+                      <ListItemText
+                        primary="Sobre nosotros"
+                        sx={{
+                          "& .MuiTypography-root": {
+                            fontSize: "1.2rem",
+                            fontWeight: "600",
+                            fontStyle: "italic",
+                            marginBottom: "0.5rem",
+                          },
+                        }}
+                      />
+                    </ListItem>
+                  </a>
+                  <a href="#faqs" onClick={handleCloseNavMenu}>
+                    <ListItem>
+                      <ListItemText
+                        primary="Preguntas frecuentes"
+                        sx={{
+                          "& .MuiTypography-root": {
+                            fontSize: "1.2rem",
+                            fontWeight: "600",
+                            fontStyle: "italic",
+                            marginBottom: "0.5rem",
+                          },
+                        }}
+                      />
+                    </ListItem>
+                  </a>
+                  <a href="#footer" onClick={handleCloseNavMenu}>
+                    <ListItem>
+                      <ListItemText
+                        primary="Contactanos"
+                        sx={{
+                          "& .MuiTypography-root": {
+                            fontSize: "1.2rem",
+                            fontWeight: "600",
+                            fontStyle: "italic",
+                          },
+                        }}
+                      />
+                    </ListItem>
+                  </a>
                 </List>
               </Drawer>
             </Box>
@@ -274,71 +256,66 @@ export const NavbarPresentacional = ({
                 display: { xs: "none", sm: "flex", margin: "0 0 0 auto" },
               }}
             >
-              <Button
-                
-                to="/outfits"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  color: "black",
-                  mx: 1,
-                  textAlign: "center",
-                  fontStyle: "italic",
-                }}
-              >
-                Outfits
-              </Button>
-              <Button
-                
-                to="/talles"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  color: "black",
-                  mx: 1,
-                  textAlign: "center",
-                  fontStyle: "italic",
-                }}
-              >
-                Talles
-              </Button>
-              <Button
-                
-                to="/sobreNosotros"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  color: "black",
-                  mx: 1,
-                  textAlign: "center",
-                  fontStyle: "italic",
-                }}
-              >
-                Sobre nosotros
-              </Button>
-              <Button
-                
-                to="/faqs"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  color: "black",
-                  mx: 1,
-                  textAlign: "center",
-                  fontStyle: "italic",
-                }}
-              >
-                Preguntas frecuentes
-              </Button>
-              <Button
-                
-                to="/footer"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  color: "black",
-                  mx: 1,
-                  textAlign: "center",
-                  fontStyle: "italic",
-                }}
-              >
-                Contactanos
-              </Button>
+              <a href="#outfits" onClick={handleCloseNavMenu}>
+                <Button
+                  sx={{
+                    color: "black",
+                    mx: { sm: "auto", md: "auto", lg: 1 },
+                    textAlign: "center",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Outfits
+                </Button>
+              </a>
+              <a href="#talles" onClick={handleCloseNavMenu}>
+                <Button
+                  sx={{
+                    color: "black",
+                    mx: { sm: "auto", md: "auto", lg: 1 },
+                    textAlign: "center",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Talles
+                </Button>
+              </a>
+              <a href="#sobreNosotros" onClick={handleCloseNavMenu}>
+                <Button
+                  sx={{
+                    color: "black",
+                    mx: { sm: "auto", md: "auto", lg: 1 },
+                    textAlign: "center",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Sobre nosotros
+                </Button>
+              </a>
+              <a href="#faqs" onClick={handleCloseNavMenu}>
+                <Button
+                  sx={{
+                    color: "black",
+                    mx: { sm: "auto", md: "auto", lg: 1 },
+                    textAlign: "center",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Preguntas frecuentes
+                </Button>
+              </a>
+              <a href="#footer" onClick={handleCloseNavMenu}>
+                <Button
+                  sx={{
+                    color: "black",
+                    mx: { sm: "auto", md: "auto", lg: 1 },
+                    textAlign: "center",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Contactanos
+                </Button>
+              </a>
             </Box>
           </Toolbar>
         </Container>

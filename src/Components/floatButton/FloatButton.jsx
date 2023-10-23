@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export const FloatButton = () => {
   const [active, setActive] = useState("disabled");
-  console.log(active);
 
   const activeIcon = () => {
     setActive(active == "disabled" ? "icon" : "disabled");
