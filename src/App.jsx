@@ -1,13 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { NavbarContainer } from "./components/layout/navbar/NavbarContainer";
+import { NavbarContainer } from "./Components/layout/navbar/NavbarContainer";
 import { CarouselAm } from "./Components/Carousel/Carousel";
-import { Moda } from "./components/moda/Moda";
-import { GuiaTalles } from "./components/talles/GuiaTalles";
-import { QuienesSomos } from "./components/quienes_somos/QuienesSomos";
-import { AccordionAm } from "./Components/Accordion/Accordion";
-import { Footer } from "./components/layout/footer/Footer.jsx";
-import { FloatButton } from "./components/floatButton/FloatButton";
+import { Moda } from "./Components/moda/Moda";
+import { GuiaTalles } from "./Components/talles/GuiaTalles";
+import { QuienesSomos } from "./Components/quienes_somos/QuienesSomos";
+import { AccordionAm } from "./Components/Accordion/AccordionAm";
+import { Footer } from "./Components/layout/footer/Footer.jsx";
+import { FloatButton } from "./Components/floatButton/FloatButton";
 
 function App() {
   return (

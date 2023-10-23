@@ -1,7 +1,7 @@
 import { Add, Remove } from "@mui/icons-material"
 import { Accordion, AccordionDetails, AccordionSummary, Container} from "@mui/material"
 import "../../index.css"
-import "./Accordion.css"
+import "./AccordionAm.css"
 import { useState } from "react"
 
 
