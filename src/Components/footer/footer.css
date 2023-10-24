@@ -18,7 +18,7 @@
   height: 40px;
 }
 
-.icon {
+.iconFooter {
   height: 32px;
   width: 32px;
 }
@@ -43,7 +43,7 @@
     height: 64px;
     width: 64px;
   }
-  .icon {
+  .iconFooter {
     height: 26px;
     width: 26px;
   }
@@ -67,7 +67,7 @@
     height: 60px;
     width: 60px;
   }
-  .icon {
+  .iconFooter {
     height: 24px;
     width: 24px;
   }
