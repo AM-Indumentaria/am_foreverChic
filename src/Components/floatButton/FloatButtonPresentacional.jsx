@@ -173,6 +173,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
           media=""
         >
           <ChatIcon
+            className="icon"
             sx={{
               color: "white",
               width: {

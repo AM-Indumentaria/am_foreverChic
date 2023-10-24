@@ -13,3 +13,37 @@
   width: 56px;
   border-radius: 30px;
 }
+
+@media screen and (max-height: 650px) {
+  .icon:nth-child(1) {
+    top: 64vh;
+  }
+  .icon:nth-child(2) {
+    top: 76vh;
+  }
+  .icon:nth-child(3) {
+    top: 88vh;
+  }
+}
+@media screen and (max-height: 450px) {
+  .icon:nth-child(1) {
+    top: 52vh;
+  }
+  .icon:nth-child(2) {
+    top: 68vh;
+  }
+  .icon:nth-child(3) {
+    top: 84vh;
+  }
+}
+@media screen and (max-height: 330px) {
+  .icon:nth-child(1) {
+    top: 46vh;
+  }
+  .icon:nth-child(2) {
+    top: 64vh;
+  }
+  .icon:nth-child(3) {
+    top: 82vh;
+  }
+}
