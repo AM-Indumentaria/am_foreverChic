@@ -26,7 +26,7 @@ export const ModaPresentacional = ({
         </div>
 
         <div className=" mb-5 pb-4 pt-5 containers">
-          <h2 className="fw-medium ms-5 ps-5 ">Clasico</h2>
+          <h2 className="fw-semibold ms-5 ps-5 ">Clásico</h2>
           <h2 className="fw-medium night ms-5 ps-5 titleNoche">Noche</h2>
           <div className="d-flex flex-row imgsGap justify-content-center ">
             {clasico.map((prod) => {
