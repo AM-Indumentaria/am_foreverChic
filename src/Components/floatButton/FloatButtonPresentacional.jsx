@@ -15,8 +15,8 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             position: "fixed",
             top: {
               xs: "73vh",
-              sm: "75vh",
-              md: "75vh",
+              sm: "73vh",
+              md: "73vh",
               lg: "75vh",
               xl: "75vh",
             },
@@ -83,8 +83,8 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
 
             top: {
               xs: "80vh",
-              sm: "83vh",
-              md: "83vh",
+              sm: "80vh",
+              md: "80vh",
               lg: "83vh",
               xl: "83vh",
             },
@@ -138,8 +138,8 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             position: "fixed",
             top: {
               xs: "87vh",
-              sm: "91vh",
-              md: "91vh",
+              sm: "87vh",
+              md: "87vh",
               lg: "91vh",
               xl: "91vh",
             },
