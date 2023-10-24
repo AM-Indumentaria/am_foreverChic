@@ -14,7 +14,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             ":hover": { backgroundColor: "#E4405F" },
             position: "fixed",
             top: {
-              xs: "77vh",
+              xs: "71vh",
               sm: "75vh",
               md: "75vh",
               lg: "75vh",
@@ -82,7 +82,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             },
 
             top: {
-              xs: "84vh",
+              xs: "78vh",
               sm: "83vh",
               md: "83vh",
               lg: "83vh",
@@ -137,7 +137,7 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
             ":hover": { backgroundColor: "#FFAD66" },
             position: "fixed",
             top: {
-              xs: "91vh",
+              xs: "85vh",
               sm: "91vh",
               md: "91vh",
               lg: "91vh",
