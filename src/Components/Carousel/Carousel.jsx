@@ -8,13 +8,13 @@ export const CarouselAm = () => {
   return (
     <Carousel className="w-100">
       <CarouselItem interval={3000}>
-        <img className="img-carousel" src={carousel_img_1} alt="imagen 1" />
+        <img className="img-fluid" src={carousel_img_1} alt="imagen 1" />
       </CarouselItem>
       <CarouselItem interval={3000}>
-        <img className="img-carousel" src={carousel_img_2} alt="imagen 2" />
+        <img className="img-fluid" src={carousel_img_2} alt="imagen 2" />
       </CarouselItem>
       <CarouselItem interval={3000}>
-        <img className="img-carousel" src={carousel_img_3} alt="imagen 3" />
+        <img className="img-fluid" src={carousel_img_3} alt="imagen 3" />
       </CarouselItem>
     </Carousel>
   );
