@@ -16,34 +16,34 @@
 
 @media screen and (max-height: 650px) {
   .icon:nth-child(1) {
-    top: 55vh;
+    top: 53vh;
   }
   .icon:nth-child(2) {
-    top: 67vh;
+    top: 65vh;
   }
   .icon:nth-child(3) {
-    top: 79vh;
+    top: 77vh;
   }
 }
 @media screen and (max-height: 450px) {
   .icon:nth-child(1) {
-    top: 43vh;
+    top: 41vh;
   }
   .icon:nth-child(2) {
-    top: 59vh;
+    top: 57vh;
   }
   .icon:nth-child(3) {
-    top: 75vh;
+    top: 73vh;
   }
 }
 @media screen and (max-height: 330px) {
   .icon:nth-child(1) {
-    top: 37vh;
+    top: 35vh;
   }
   .icon:nth-child(2) {
-    top: 55vh;
+    top: 53vh;
   }
   .icon:nth-child(3) {
-    top: 73vh;
+    top: 71vh;
   }
 }
