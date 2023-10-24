@@ -208,7 +208,7 @@ export const Footer = () => {
           </defs>
         </svg>
         <h3 className="text-light amInd">
-          © AM Indumentaria. Todos los derechos reservados.
+          © AM Forever Chic. Todos los derechos reservados.
         </h3>
       </div>
     </div>
