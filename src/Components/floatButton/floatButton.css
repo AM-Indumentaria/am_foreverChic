@@ -15,17 +15,35 @@
 }
 
 @media screen and (max-height: 650px) {
-  .icon {
-    transform: translateY(10vh);
+  .icon:nth-child(1) {
+    transform: translateY(-10vh);
+  }
+  .icon:nth-child(2) {
+    transform: translateY(-10vh);
+  }
+  .icon:nth-child(3) {
+    transform: translateY(-10vh);
   }
 }
 @media screen and (max-height: 450px) {
-  .icon {
-    transform: translateY(10vh);
+  .icon:nth-child(1) {
+    transform: translateY(-10vh);
+  }
+  .icon:nth-child(2) {
+    transform: translateY(-10vh);
+  }
+  .icon:nth-child(3) {
+    transform: translateY(-10vh);
   }
 }
 @media screen and (max-height: 330px) {
-  .icon {
-    transform: translateY(10vh);
+  .icon:nth-child(1) {
+    transform: translateY(-10vh);
+  }
+  .icon:nth-child(2) {
+    transform: translateY(-10vh);
+  }
+  .icon:nth-child(3) {
+    transform: translateY(-10vh);
   }
 }
