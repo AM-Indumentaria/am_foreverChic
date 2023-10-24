@@ -24,8 +24,8 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
               xs: "85vw",
               sm: "91vw",
               md: "94vw",
-              lg: "95vw",
-              xl: "95vw",
+              lg: "94vw",
+              xl: "94vw",
             },
             width: {
               xs: 45,
@@ -77,8 +77,8 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
               xs: "85vw",
               sm: "91vw",
               md: "94vw",
-              lg: "95vw",
-              xl: "95vw",
+              lg: "94vw",
+              xl: "94vw",
             },
 
             top: {
@@ -147,8 +147,8 @@ export const FloatButtonPresentacional = ({ active, activeIcon }) => {
               xs: "85vw",
               sm: "91vw",
               md: "94vw",
-              lg: "95vw",
-              xl: "95vw",
+              lg: "94vw",
+              xl: "94vw",
             },
             width: {
               xs: 45,
