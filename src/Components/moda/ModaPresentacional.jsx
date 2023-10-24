@@ -11,7 +11,7 @@ export const ModaPresentacional = ({
     <div id="outfits" className="fst-italic text-black">
       <div id="moda">
         <div className=" mb-5 pb-4 pt-5 containers">
-          <h2 className="fw-medium ms-5 ps-5">Casual</h2>
+          <h2 className="fw-semibold ms-5 ps-5">Casual</h2>
 
           <div className="d-flex flex-row imgsGap justify-content-center ">
             {casual.map((prod) => {
@@ -27,7 +27,7 @@ export const ModaPresentacional = ({
 
         <div className=" mb-5 pb-4 pt-5 containers">
           <h2 className="fw-semibold ms-5 ps-5 ">Clásico</h2>
-          <h2 className="fw-medium night ms-5 ps-5 titleNoche">Noche</h2>
+          <h2 className="fw-semibold night ms-5 ps-5 titleNoche">Noche</h2>
           <div className="d-flex flex-row imgsGap justify-content-center ">
             {clasico.map((prod) => {
               return (
