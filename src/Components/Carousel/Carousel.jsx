@@ -1,4 +1,3 @@
-import "./Carousel.css";
 import carousel_img_1 from "../../assets/carousel_img_1.webp";
 import carousel_img_2 from "../../assets/carousel_img_2.webp";
 import carousel_img_3 from "../../assets/carousel_img_3.webp";
