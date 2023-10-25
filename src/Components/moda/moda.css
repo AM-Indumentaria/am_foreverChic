@@ -33,11 +33,11 @@
 .slick-slider {
   display: flex;
   justify-content: center;
+  border: none;
 }
 .slick-slide {
   margin-right: 16px;
 }
-
 .slick-track {
   display: flex;
 }
@@ -50,6 +50,9 @@
 
 .slick-list {
   width: 1285px;
+}
+.containerNoche:focus {
+  outline: none;
 }
 
 @media screen and (max-width: 1700px) {
