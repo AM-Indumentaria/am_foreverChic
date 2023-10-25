@@ -33,7 +33,6 @@
 .slick-slider {
   display: flex;
   justify-content: center;
-  border: none;
 }
 .slick-slide {
   margin-right: 16px;
