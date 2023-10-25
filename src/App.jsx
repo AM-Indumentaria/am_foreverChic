@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { NavbarContainer } from "./Components/navbar/NavbarContainer";
 import { CarouselAm } from "./Components/Carousel/Carousel";
 import { Moda } from "./Components/moda/Moda";
