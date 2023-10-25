@@ -1,23 +1,27 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export const ModaPresentacional = ({
   noche,
   clasico,
   casual,
-  translateAxisX,
-  moveProducts,
-  ArrowForwardIosIcon,
-  ArrowBackIosNewIcon,
+  settings,
+  Slider,
 }) => {
   return (
     <div id="outfits" className="fst-italic text-black">
       <div id="moda">
         <div className=" mb-5 pb-4 pt-5 containers">
           <h2 className="fw-semibold ms-5 ps-5">Casual</h2>
-
           <div className="d-flex flex-row imgsGap justify-content-center ">
             {casual.map((prod) => {
               return (
                 <div key={prod.id}>
-                  <img src={prod.img} className="img-fluid mb-3"></img>
+                  <img
+                    src={prod.img}
+                    className="img-fluid mb-3"
+                    alt={prod.alt}
+                  ></img>
                   <h3 className="">{prod.title}nombre del conjunto</h3>
                 </div>
               );
@@ -26,13 +30,17 @@ export const ModaPresentacional = ({
         </div>
 
         <div className=" mb-5 pb-4 pt-5 containers">
-          <h2 className="fw-semibold ms-5 ps-5 ">Clásico</h2>
+          <h2 className="fw-semibold  ms-5 ps-5 ">Clásico</h2>
           <h2 className="fw-semibold night ms-5 ps-5 titleNoche">Noche</h2>
           <div className="d-flex flex-row imgsGap justify-content-center ">
             {clasico.map((prod) => {
               return (
                 <div key={prod.id}>
-                  <img src={prod.img} className="img-fluid mb-3"></img>
+                  <img
+                    src={prod.img}
+                    className="img-fluid mb-3"
+                    alt={prod.alt}
+                  ></img>
                   <h3>{prod.title}nombre del conjunto</h3>
                 </div>
               );
@@ -40,61 +48,21 @@ export const ModaPresentacional = ({
           </div>
         </div>
 
-        <div className="pt-5">
-          <div className="d-flex flex-row imgsGap justify-content-center carousel">
+        <div className="pt-5 ">
+          <Slider {...settings}>
             {noche.map((prod) => {
               return (
-                <div
-                  key={prod.id}
-                  style={{
-                    transform: `translateX(${moveProducts}%)`,
-                    transition: "0.4s",
-                  }}
-                >
-                  <img src={prod.img} className="mb-3"></img>
+                <div key={prod.id} className="containerNoche">
+                  <img
+                    src={prod.img}
+                    className="mb-3 img-fluid "
+                    alt={prod.alt}
+                  ></img>
                   <h3>{prod.title}nombre del conjunto</h3>
                 </div>
               );
             })}
-            <ArrowBackIosNewIcon
-              sx={{
-                fontSize: {
-                  xs: 30,
-                  sm: 40,
-                  md: 40,
-                  lg: 46,
-                  xl: 46,
-                },
-                backgroundColor: "black",
-                color: "white",
-                padding: 1.4,
-                cursor: "pointer",
-              }}
-              className="arrowBack"
-              onClick={() => {
-                translateAxisX("left");
-              }}
-            />
-            <ArrowForwardIosIcon
-              sx={{
-                fontSize: {
-                  xs: 30,
-                  sm: 40,
-                  md: 40,
-                  lg: 46,
-                  xl: 46,
-                },
-                backgroundColor: "black",
-                color: "white",
-                padding: 1.4,
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                translateAxisX("right");
-              }}
-              className="arrowFoward"
-            />
-          </div>
+          </Slider>
         </div>
       </div>
     </div>
