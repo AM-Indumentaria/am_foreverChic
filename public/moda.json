@@ -2,81 +2,61 @@
   {
     "id": "1",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094610/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._9_ptfu1n.webp",
-    "title": "",
     "category": "casual",
-    "bodyName": "",
     "alt": "short de jean"
   },
   {
     "id": "2",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094602/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._4_wo7qxz.webp",
-    "title": "",
     "category": "casual",
-    "bodyName": "bodyName1",
     "alt": "pantalon violeta"
   },
   {
     "id": "3",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094600/Fotos%20AM%20Catalogo/Gallery_1666826885550_ljrdw4.webp",
-    "title": "",
     "category": "casual",
-    "bodyName": "bodyName2",
     "alt": "camisas de verano"
   },
   {
     "id": "4",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698175869/Fotos%20AM%20Catalogo/Rectangle_12348_pqqrx6.webp",
-    "title": "",
     "category": "clasico",
-    "bodyName": "bodyName3",
     "alt": "sweater azul y saco beige"
   },
   {
     "id": "5",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094605/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._8_yapmen.webp",
-    "title": "",
     "category": "clasico",
-    "bodyName": "bodyName4",
     "alt": "campera celeste"
   },
   {
     "id": "6",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094604/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._7_j7krtw.webp",
-    "title": "",
     "category": "clasico",
-    "bodyName": "bodyName5",
     "alt": "campera azul"
   },
   {
     "id": "7",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094601/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._3_yokpzx.webp",
-    "title": "",
     "category": "noche",
-    "bodyName": "bodyName6",
     "alt": "vestido blanco"
   },
   {
     "id": "8",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094873/Fotos%20AM%20Catalogo/8_cjar73.webp",
-    "title": "",
     "category": "noche",
-    "bodyName": "bodyName7",
     "alt": "saco celeste"
   },
   {
     "id": "9",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094602/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._5_dooluj.webp",
-    "title": "",
     "category": "noche",
-    "bodyName": "bodyName8",
     "alt": "pollera blanca"
   },
   {
     "id": "10",
     "img": "https://res.cloudinary.com/diisow8ys/image/upload/v1698094600/Fotos%20AM%20Catalogo/WhatsApp_Image_2023-10-02_at_02._2_p7kkxx.webp",
-    "title": "",
     "category": "noche",
-    "bodyName": "bodyName9",
     "alt": "vestido rosa"
   }
 ]

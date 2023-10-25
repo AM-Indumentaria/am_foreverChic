@@ -19,7 +19,6 @@ export const ModaPresentacional = ({
                     className="img-fluid mb-3"
                     alt={prod.alt}
                   ></img>
-                  <h3 className="">{prod.title}nombre del conjunto</h3>
                 </div>
               );
             })}
@@ -38,7 +37,6 @@ export const ModaPresentacional = ({
                     className="img-fluid mb-3"
                     alt={prod.alt}
                   ></img>
-                  <h3>{prod.title}nombre del conjunto</h3>
                 </div>
               );
             })}
@@ -55,7 +53,6 @@ export const ModaPresentacional = ({
                     className="mb-3 img-fluid "
                     alt={prod.alt}
                   ></img>
-                  <h3>{prod.title}nombre del conjunto</h3>
                 </div>
               );
             })}
